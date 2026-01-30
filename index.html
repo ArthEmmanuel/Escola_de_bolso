@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola de Bolso - Selecione seu Perfil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="logo.png" alt="Escola de Bolso - Logo" class="logo-img">
+                    <div class="logo-text">
+                        <h1>Escola de Bolso</h1>
+                        <p class="tagline">Nenhum aluno é invisível</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <div class="header-info">
+                </div>
+                <a href="index.html" class="btn-secondary" aria-label="Voltar para página inicial">
+                    <i class="fas fa-home"></i> Início
+                </a>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="welcome-card">
+                <h2>Bem-vindo ao Escola de Bolso</h2>
+                <p>Uma plataforma de comunicação escolar com foco em empatia, acompanhamento e prevenção da evasão escolar.</p>
+                <p class="highlight-text">Escolha seu perfil para continuar:</p>
+            </div>
+
+            <div class="profile-cards">
+                <div class="profile-card" onclick="window.location.href='aluno.html'">
+                    <div class="profile-icon" style="background-color: #81B29A;" aria-hidden="true">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Aluno</h3>
+                    <p>Marque seu humor, envie mensagens e visualize sua presença.</p>
+                    <button class="btn-primary" aria-label="Acessar perfil de Aluno">Acessar</button>
+                </div>
+
+                <div class="profile-card" onclick="window.location.href='responsavel.html'">
+                    <div class="profile-icon" style="background-color: #F2CC8F;" aria-hidden="true">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Responsável</h3>
+                    <p>Acompanhe presença, humor e comunicados do seu aluno.</p>
+                    <button class="btn-primary" aria-label="Acessar perfil de Responsável">Acessar</button>
+                </div>
+
+                <div class="profile-card" onclick="window.location.href='instituicao.html'">
+                    <div class="profile-icon" style="background-color: #E07A5F;" aria-hidden="true">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Instituição</h3>
+                    <p>Monitore alunos, receba mensagens e envie comunicados.</p>
+                    <button class="btn-primary" aria-label="Acessar perfil de Instituição">Acessar</button>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3><i class="fas fa-heart"></i> Sobre o Projeto</h3>
+                <p>O <strong>Escola de Bolso</strong> é um aplicativo escolar de comunicação que busca prevenir a evasão escolar através do acompanhamento do bem-estar dos alunos e da melhoria da comunicação entre todas as partes envolvidas.</p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-comments"></i>
+                        <span>Comunicação direta</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-smile"></i>
+                        <span>Check de humor</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Relatórios semanais</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Canal seguro</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Desenvolvido para tornar a educação mais humana e conectada</p>
+            <p class="footer-team">Equipe: Arthur Emmanuel, Guilherme Paiva, Iury Gabriel, Letícia Andressa, Mateus Araujo</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

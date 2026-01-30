@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituição - Escola de Bolso</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+                 <header class="main-header">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="logo.png" alt="Escola de Bolso - Logo" class="logo-img">
+                    <div class="logo-text">
+                        <h1>Escola de Bolso</h1>
+                        <p class="tagline">Nenhum aluno é invisível</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <div class="header-info">
+                </div>
+                <a href="index.html" class="btn-secondary" aria-label="Voltar para página inicial">
+                    <i class="fas fa-home"></i> Início
+                </a>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="page-title">
+                <h2><i class="fas fa-university"></i> Área da Instituição</h2>
+                <p class="student-name">Olá, <span id="institutionName">Escola Y</span>!</p>
+                <p>Painel de monitoramento e comunicação escolar</p>
+            </div>
+
+            <div class="dashboard">
+                <!-- Card de lista de alunos -->
+                <div class="card">
+                    <h3><i class="fas fa-user-graduate"></i> Lista de Alunos</h3>
+                    <p>Visualize informações dos alunos da instituição:</p>
+                    
+                    <div class="students-list">
+                        <div class="student-item">
+                            <div class="student-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="student-info">
+                                <h4>Rebeca Silva</h4>
+                                <p>2º ano do ensino médio</p>
+                                <div class="student-status">
+                                    <span class="status-mood neutral">Humor: Neutro</span>
+                                    <span class="status-attendance">Presença: 80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="student-item">
+                            <div class="student-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="student-info">
+                                <h4>Carlos Mendes</h4>
+                                <p>3º ano do ensino médio</p>
+                                <div class="student-status">
+                                    <span class="status-mood happy">Humor: Feliz</span>
+                                    <span class="status-attendance">Presença: 95%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="student-item">
+                            <div class="student-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="student-info">
+                                <h4>Ana Paula Costa</h4>
+                                <p>1º ano do ensino médio</p>
+                                <div class="student-status">
+                                    <span class="status-mood sad">Humor: Triste</span>
+                                    <span class="status-attendance">Presença: 70%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="student-item">
+                            <div class="student-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="student-info">
+                                <h4>João Pedro Almeida</h4>
+                                <p>2º ano do ensino médio</p>
+                                <div class="student-status">
+                                    <span class="status-mood neutral">Humor: Neutro</span>
+                                    <span class="status-attendance">Presença: 85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="student-item">
+                            <div class="student-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="student-info">
+                                <h4>Maria Eduarda Lima</h4>
+                                <p>3º ano do ensino médio</p>
+                                <div class="student-status">
+                                    <span class="status-mood happy">Humor: Feliz</span>
+                                    <span class="status-attendance">Presença: 90%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="students-summary">
+                        <p><strong>Resumo institucional:</strong> 45 alunos ativos | Média de humor: 3.2/5 | Média de presença: 84%</p>
+                    </div>
+                </div>
+
+                <!-- Card de mensagens dos alunos -->
+                <div class="card">
+                    <h3><i class="fas fa-envelope-open-text"></i> Mensagens dos Alunos</h3>
+                    <p>Mensagens recebidas através do canal seguro:</p>
+                    
+                    <div id="inboxList" class="inbox-list">
+                        <!-- As mensagens serão carregadas aqui via JavaScript -->
+                        <div class="inbox-empty">
+                            <i class="fas fa-inbox"></i>
+                            <p>Nenhuma mensagem recebida ainda.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="message-filter">
+                        <button class="btn-filter active" data-filter="all">Todas</button>
+                        <button class="btn-filter" data-filter="unread">Não lidas</button>
+                        <button class="btn-filter" data-filter="read">Lidas</button>
+                    </div>
+                </div>
+
+                <!-- Card de enviar comunicados -->
+                <div class="card">
+                    <h3><i class="fas fa-bullhorn"></i> Enviar Comunicado</h3>
+                    <p>Envie um comunicado geral para todos os responsáveis:</p>
+                    
+                    <div class="announcement-form">
+                        <div class="form-group">
+                            <label for="announcementTitle">Título do comunicado:</label>
+                            <input type="text" id="announcementTitle" placeholder="Ex: Reunião de pais">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="announcementMessage">Mensagem:</label>
+                            <textarea id="announcementMessage" placeholder="Digite o comunicado aqui..."></textarea>
+                        </div>
+                        
+                        <button id="sendAnnouncementBtn" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i> Enviar comunicado
+                        </button>
+                    </div>
+                    
+                    <div class="announcement-history">
+                        <h4>Comunicados recentes:</h4>
+                        <div id="announcementList" class="announcement-list">
+                            <!-- Os comunicados serão carregados aqui via JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Monitoramento da presença e do engajamento dos alunos para uma educação mais humana.</p>
+            <p class="footer-team">Área da Instituição - Escola de Bolso</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

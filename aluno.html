@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluno - Escola de Bolso</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+                <header class="main-header">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="logo.png" alt="Escola de Bolso - Logo" class="logo-img">
+                    <div class="logo-text">
+                        <h1>Escola de Bolso</h1>
+                        <p class="tagline">Nenhum aluno é invisível</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <div class="header-info">
+                </div>
+                <a href="index.html" class="btn-secondary" aria-label="Voltar para página inicial">
+                    <i class="fas fa-home"></i> Início
+                </a>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="page-title">
+                <h2><i class="fas fa-user-graduate"></i> Área do Aluno</h2>
+                <p class="student-name">Olá, <span id="studentName">Rebeca Silva</span>!</p>
+            </div>
+
+            <div class="dashboard">
+                <!-- Card de humor -->
+                <div class="card">
+                    <h3><i class="fas fa-smile"></i> Como está seu humor esta semana?</h3>
+                    <p>Selecione como você está se sentindo:</p>
+                    
+                    <div class="mood-options-grid">
+                        <!-- Alegria -->
+                        <div class="mood-option" data-mood="alegria">
+                            <div class="mood-image-container">
+                                <!-- Coloque sua imagem para ALEGRIA aqui -->
+                                <img src="Alegria.png" alt="Alegria" class="mood-image">
+                            </div>
+                            <p class="mood-label">Alegria</p>
+                        </div>
+                        
+                        <!-- Empolgado -->
+                        <div class="mood-option" data-mood="empolgado">
+                            <div class="mood-image-container">
+                                <!-- Coloque sua imagem para EMPOLGADO aqui -->
+                                <img src="Empolgado.png" alt="Empolgado" class="mood-image">
+                            </div>
+                            <p class="mood-label">Empolgado</p>
+                        </div>
+                        
+                        <!-- Focado -->
+                        <div class="mood-option" data-mood="focado">
+                            <div class="mood-image-container">
+                                <!-- Coloque sua imagem para FOCADO aqui -->
+                                <img src="Focado.png" alt="Focado" class="mood-image">
+                            </div>
+                            <p class="mood-label">Focado</p>
+                        </div>
+                        
+                        <!-- Neutro/Tédio -->
+                        <div class="mood-option" data-mood="tedio">
+                            <div class="mood-image-container">
+                                <!-- Coloque sua imagem para TÉDIO aqui -->
+                                <img src="Tedio.png" alt="Tédio" class="mood-image">
+                            </div>
+                            <p class="mood-label">Tédio</p>
+                        </div>
+                        
+                        <!-- Tristeza -->
+                        <div class="mood-option" data-mood="tristeza">
+                            <div class="mood-image-container">
+                                <!-- Coloque sua imagem para TRISTEZA aqui -->
+                                <img src="Tristeza.png" alt="Tristeza" class="mood-image">
+                            </div>
+                            <p class="mood-label">Tristeza</p>
+                        </div>
+                        
+                        <!-- Raiva -->
+                        <div class="mood-option" data-mood="raiva">
+                            <div class="mood-image-container">
+                                <!-- Coloque sua imagem para RAIVA aqui -->
+                                <img src="raiva.png" alt="Raiva" class="mood-image">
+                            </div>
+                            <p class="mood-label">Raiva</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mood-result">
+                        <p>Humor atual: <strong id="currentMood">Não definido</strong></p>
+                        <button id="saveMoodBtn" class="btn-primary">Salvar meu humor</button>
+                    </div>
+                </div>
+
+                <!-- Card de presença -->
+                <div class="card">
+                    <h3><i class="fas fa-calendar-check"></i> Sua presença semanal</h3>
+                    <p>Acompanhe suas presenças na última semana:</p>
+                    
+                    <div class="attendance-chart">
+                        <div class="attendance-day">
+                            <p>Seg</p>
+                            <div class="attendance-bar present"></div>
+                            <span>Presente</span>
+                        </div>
+                        <div class="attendance-day">
+                            <p>Ter</p>
+                            <div class="attendance-bar present"></div>
+                            <span>Presente</span>
+                        </div>
+                        <div class="attendance-day">
+                            <p>Qua</p>
+                            <div class="attendance-bar present"></div>
+                            <span>Presente</span>
+                        </div>
+                        <div class="attendance-day">
+                            <p>Qui</p>
+                            <div class="attendance-bar absent"></div>
+                            <span>Falta</span>
+                        </div>
+                        <div class="attendance-day">
+                            <p>Sex</p>
+                            <div class="attendance-bar present"></div>
+                            <span>Presente</span>
+                        </div>
+                    </div>
+                    
+                    <div class="attendance-summary">
+                        <p><strong>Resumo:</strong> 4 presenças e 1 falta esta semana</p>
+                    </div>
+                </div>
+
+                <!-- Card de mensagens -->
+                <div class="card">
+                    <h3><i class="fas fa-envelope"></i> Enviar mensagem para a instituição</h3>
+                    <p>Use este canal seguro para expressar dificuldades, opiniões ou pedir ajuda.</p>
+                    
+                    <div class="message-form">
+                        <textarea id="messageText" placeholder="Digite sua mensagem aqui..."></textarea>
+                        <button id="sendMessageBtn" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i> Enviar mensagem
+                        </button>
+                    </div>
+                    
+                    <div class="message-history">
+                        <h4>Suas mensagens recentes:</h4>
+                        <div id="messageList" class="message-list">
+                            <!-- As mensagens serão carregadas aqui via JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Lembre-se: sua voz é importante para nós!</p>
+            <p class="footer-team">Área do Aluno - Escola de Bolso</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

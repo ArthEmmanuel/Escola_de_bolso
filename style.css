@@ -1,0 +1,1225 @@
+/* ============================================
+   RESET E ESTILOS GERAIS - UNIFICADO
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #F4F1DE;
+    color: #3D405B;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+}
+
+/* ============================================
+   CABEÇALHO - UNIFICADO
+   ============================================ */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #E07A5F;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.logo i {
+    font-size: 2.5rem;
+    color: #E07A5F;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: #3D405B;
+}
+
+.logo-img {
+    max-width: 60px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #3D405B;
+    font-weight: 600;
+}
+
+.header-info {
+    text-align: right;
+}
+
+.student-name, .institution-name, .parent-name {
+    font-size: 1.2rem;
+    color: #3D405B;
+    margin-bottom: 5px;
+}
+
+.user-role {
+    color: #E07A5F;
+    font-weight: 600;
+}
+
+/* ============================================
+   CONTEÚDO PRINCIPAL - UNIFICADO
+   ============================================ */
+.main-content {
+    margin-bottom: 40px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* ============================================
+   ESTILOS PARA PÁGINA INICIAL (index.html)
+   ============================================ */
+.welcome-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+}
+
+.welcome-card h2 {
+    color: #3D405B;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.welcome-card p {
+    margin-bottom: 10px;
+    color: #3D405B;
+}
+
+.highlight-text {
+    font-weight: 600;
+    color: #E07A5F;
+    font-size: 1.1rem;
+    margin-top: 20px !important;
+}
+
+.profile-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.profile-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.profile-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.profile-card h3 {
+    color: #3D405B;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.profile-card p {
+    color: #3D405B;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* ============================================
+   ESTILOS COMUNS PARA TODAS AS PÁGINAS
+   ============================================ */
+.page-title {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #F2CC8F;
+    width: 100%;
+}
+
+.page-title h2 {
+    color: #3D405B;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.page-title h2 i {
+    color: #E07A5F;
+}
+
+#studentName, #institutionName, #parentName {
+    color: #E07A5F;
+    font-weight: 600;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    overflow: hidden;
+}
+
+.card h3 {
+    color: #3D405B;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card h3 i {
+    color: #E07A5F;
+}
+
+.card p {
+    color: #3D405B;
+    margin-bottom: 20px;
+}
+
+/* ============================================
+   ESTILOS PARA PÁGINA DO ALUNO (aluno.html)
+   ============================================ */
+.mood-options-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.mood-option {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.mood-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: rgba(244, 241, 222, 0.5);
+}
+
+.mood-option.selected {
+    transform: translateY(-5px);
+    box-shadow: 0 0 0 3px #E07A5F, 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: rgba(224, 122, 95, 0.1);
+}
+
+.mood-image-container {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 8px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.mood-option:hover .mood-image-container {
+    border-color: #F2CC8F;
+}
+
+.mood-option.selected .mood-image-container {
+    border-color: #E07A5F;
+}
+
+.mood-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.mood-label {
+    font-weight: 600;
+    color: #3D405B;
+    margin-top: 5px;
+    font-size: 0.85rem;
+    line-height: 1.2;
+}
+
+.mood-result {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #F2CC8F;
+    width: 100%;
+}
+
+#currentMood {
+    color: #E07A5F;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* ============================================
+   ESTILOS PARA PÁGINA DA INSTITUIÇÃO (instituicao.html)
+   ============================================ */
+.students-list {
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.student-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border-left: 4px solid #81B29A;
+    flex-wrap: wrap;
+}
+
+.student-avatar {
+    font-size: 2.5rem;
+    color: #E07A5F;
+}
+
+.student-info {
+    flex: 1;
+    min-width: 200px;
+}
+
+.student-info h4 {
+    color: #3D405B;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.student-info p {
+    color: #3D405B;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.student-status {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+.status-mood, .status-attendance {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.status-mood.happy {
+    background-color: #81B29A;
+    color: white;
+}
+
+.status-mood.neutral {
+    background-color: #F2CC8F;
+    color: #3D405B;
+}
+
+.status-mood.sad {
+    background-color: #E07A5F;
+    color: white;
+}
+
+.status-attendance {
+    background-color: #3D405B;
+    color: white;
+}
+
+.students-summary {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #F2CC8F;
+}
+
+.students-summary p {
+    margin: 0;
+    color: #3D405B;
+}
+
+/* Sistema de mensagens da instituição */
+.inbox-list {
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.inbox-empty {
+    text-align: center;
+    padding: 40px 20px;
+    color: #3D405B;
+}
+
+.inbox-empty i {
+    font-size: 3rem;
+    color: #F2CC8F;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.inbox-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid #81B29A;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.inbox-item.unread {
+    border-left-color: #E07A5F;
+    background-color: #fff5f2;
+}
+
+.message-filter {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-filter {
+    background-color: #F2CC8F;
+    color: #3D405B;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-filter.active {
+    background-color: #E07A5F;
+    color: white;
+}
+
+.btn-filter:hover:not(.active) {
+    background-color: #e6b97c;
+}
+
+/* Sistema de comunicados */
+.announcement-form {
+    margin: 20px 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #3D405B;
+}
+
+.announcement-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #F2CC8F;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.announcement-form textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    border: 1px solid #F2CC8F;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    resize: vertical;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.announcement-history {
+    margin-top: 30px;
+}
+
+.announcement-history h4 {
+    color: #3D405B;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.announcement-list {
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.announcement {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid #81B29A;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.announcement-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.announcement-header h4 {
+    color: #3D405B;
+    font-size: 1.1rem;
+}
+
+.announcement-date {
+    color: #3D405B;
+    font-size: 0.9rem;
+}
+
+.announcement p {
+    color: #3D405B;
+    margin: 0;
+}
+
+/* ============================================
+   ESTILOS PARA PÁGINA DO RESPONSÁVEL (responsavel.html)
+   ============================================ */
+.attendance-chart {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    gap: 15px;
+}
+
+.attendance-day {
+    text-align: center;
+    flex: 1;
+    min-width: 50px;
+}
+
+.attendance-bar {
+    width: 25px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+.attendance-bar.present {
+    background-color: #81B29A;
+}
+
+.attendance-bar.absent {
+    background-color: #E07A5F;
+}
+
+.attendance-summary {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #F2CC8F;
+}
+
+.attendance-summary p {
+    margin: 5px 0;
+    color: #3D405B;
+}
+
+/* Sistema de humor do responsável */
+.mood-display {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.mood-icon-large {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+    margin: 0 auto 20px;
+}
+
+.mood-icon-large.happy {
+    background-color: #81B29A;
+}
+
+.mood-icon-large.neutral {
+    background-color: #F2CC8F;
+}
+
+.mood-icon-large.sad {
+    background-color: #E07A5F;
+}
+
+.mood-info {
+    flex: 1;
+    min-width: 200px;
+}
+
+.mood-info h4 {
+    color: #3D405B;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.mood-info p {
+    color: #3D405B;
+    margin-bottom: 5px;
+}
+
+.mood-history {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #F2CC8F;
+}
+
+.mood-history h4 {
+    color: #3D405B;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+    flex-wrap: wrap;
+}
+
+.history-date {
+    color: #3D405B;
+}
+
+.history-mood {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.history-mood.happy {
+    background-color: #81B29A;
+    color: white;
+}
+
+.history-mood.neutral {
+    background-color: #F2CC8F;
+    color: #3D405B;
+}
+
+.history-mood.sad {
+    background-color: #E07A5F;
+    color: white;
+}
+
+/* Sistema de comunicados do responsável */
+.announcements-list {
+    margin: 20px 0;
+}
+
+.communication-channel {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #F2CC8F;
+}
+
+.communication-channel h4 {
+    color: #3D405B;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+/* ============================================
+   FORMULÁRIOS COMUNS
+   ============================================ */
+.message-form {
+    margin: 20px 0;
+}
+
+.message-form textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    border: 1px solid #F2CC8F;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    resize: vertical;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.message-form textarea:focus,
+.announcement-form textarea:focus,
+.announcement-form input:focus {
+    outline: none;
+    border-color: #E07A5F;
+    box-shadow: 0 0 0 2px rgba(224, 122, 95, 0.2);
+}
+
+.message-history {
+    margin-top: 30px;
+}
+
+.message-history h4 {
+    color: #3D405B;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.message-list {
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.message-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid #81B29A;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.message-date {
+    color: #3D405B;
+    font-size: 0.9rem;
+}
+
+.message-content {
+    color: #3D405B;
+    line-height: 1.5;
+}
+
+/* ============================================
+   SEÇÃO DE INFORMAÇÕES (página inicial)
+   ============================================ */
+.info-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.info-section h3 {
+    color: #3D405B;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.info-section h3 i {
+    color: #E07A5F;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.feature:hover {
+    transform: translateX(5px);
+}
+
+.feature i {
+    color: #81B29A;
+    font-size: 1.2rem;
+}
+
+/* ============================================
+   BOTÕES - UNIFICADO
+   ============================================ */
+.btn-primary {
+    background-color: #E07A5F;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-width: 120px;
+}
+
+.btn-primary:hover {
+    background-color: #d1664a;
+    transform: scale(1.03);
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+.btn-secondary {
+    background-color: #81B29A;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-secondary:hover {
+    background-color: #6a9c85;
+}
+
+#saveMoodBtn, #sendMessageBtn, #sendAnnouncementBtn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* ============================================
+   RODAPÉ - UNIFICADO
+   ============================================ */
+footer {
+    text-align: center;
+    padding: 25px 0;
+    border-top: 2px solid #81B29A;
+    color: #3D405B;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.footer-team {
+    font-size: 0.9rem;
+    color: #E07A5F;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/* ============================================
+   ANIMAÇÕES - UNIFICADO
+   ============================================ */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Animações para página inicial */
+.profile-card, .welcome-card, .info-section {
+    animation: fadeIn 0.5s ease;
+}
+
+/* Animações para outras páginas */
+.card {
+    animation: fadeIn 0.5s ease;
+}
+
+.message-item, .inbox-item, .announcement, .student-item {
+    animation: slideIn 0.3s ease;
+}
+
+/* ============================================
+   ESTADOS E FEEDBACK
+   ============================================ */
+.message-empty, .inbox-empty {
+    text-align: center;
+    padding: 30px 20px;
+    color: #3D405B;
+    font-style: italic;
+}
+
+.message-empty i, .inbox-empty i {
+    font-size: 3rem;
+    color: #F2CC8F;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.success-message {
+    background-color: #81B29A;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.error-message {
+    background-color: #E07A5F;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+}
+
+/* ============================================
+   UTILITÁRIOS
+   ============================================ */
+.hidden {
+    display: none !important;
+}
+
+.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.loading::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #E07A5F;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+}
+
+/* ============================================
+   ACESSIBILIDADE
+   ============================================ */
+.btn-primary:focus,
+.btn-secondary:focus,
+.btn-filter:focus,
+.mood-option:focus,
+.profile-card:focus-within {
+    outline: 3px solid #F2CC8F;
+    outline-offset: 2px;
+}
+
+textarea:focus,
+input:focus {
+    outline: 3px solid #E07A5F;
+    outline-offset: 2px;
+}
+
+/* ============================================
+   RESPONSIVIDADE - UNIFICADO
+   ============================================ */
+
+/* Para telas grandes (acima de 1200px) */
+@media (min-width: 1200px) {
+    .profile-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Para telas médias/grandes (até 1200px) */
+@media (max-width: 1200px) {
+    .mood-options-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+}
+
+/* Para tablets (até 992px) */
+@media (max-width: 992px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+    
+    .mood-options-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .mood-display {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .mood-info {
+        text-align: center;
+    }
+}
+
+/* Para tablets pequenos/mobile (até 768px) */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .header-actions {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .header-info {
+        text-align: center;
+    }
+    
+    .profile-cards,
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+    }
+    
+    .logo {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .attendance-chart {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .attendance-day {
+        min-width: 60px;
+        margin-bottom: 15px;
+    }
+    
+    .student-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .student-info {
+        width: 100%;
+    }
+    
+    .student-status {
+        justify-content: center;
+    }
+    
+    .message-filter {
+        justify-content: center;
+    }
+    
+    .announcement-header {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .history-item {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+}
+
+/* Para celulares (até 576px) */
+@media (max-width: 576px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .logo h1 {
+        font-size: 1.6rem;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+    }
+    
+    .mood-options-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .mood-image-container {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .card,
+    .profile-card {
+        padding: 20px 15px;
+    }
+    
+    .page-title h2 {
+        font-size: 1.5rem;
+    }
+    
+    .btn-primary {
+        padding: 10px 20px;
+        min-width: 100px;
+    }
+    
+    .mood-icon-large {
+        width: 80px;
+        height: 80px;
+        font-size: 2.5rem;
+    }
+}
+
+/* Para celulares muito pequenos (até 480px) */
+@media (max-width: 480px) {
+    .logo i {
+        font-size: 2rem;
+    }
+    
+    .logo h1 {
+        font-size: 1.4rem;
+    }
+    
+    .profile-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .profile-icon i {
+        font-size: 1.5rem;
+    }
+    
+    .btn-primary, .btn-secondary, .btn-filter {
+        font-size: 0.85rem;
+        padding: 8px 16px;
+    }
+    
+    .card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .mood-image-container {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .mood-label {
+        font-size: 0.75rem;
+    }
+    
+    .status-mood, .status-attendance {
+        font-size: 0.75rem;
+        padding: 3px 8px;
+    }
+}

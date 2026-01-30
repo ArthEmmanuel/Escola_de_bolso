@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsável - Escola de Bolso</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+<header class="main-header">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="logo.png" alt="Escola de Bolso - Logo" class="logo-img">
+                    <div class="logo-text">
+                        <h1>Escola de Bolso</h1>
+                        <p class="tagline">Nenhum aluno é invisível</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <div class="header-info">
+                </div>
+                <a href="index.html" class="btn-secondary" aria-label="Voltar para página inicial">
+                    <i class="fas fa-home"></i> Início
+                </a>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="page-title">
+                <h2><i class="fas fa-users"></i> Área do Responsável</h2>
+                <p class="student-name">Olá, <span id="parentName">Hugo Silva</span>!</p>
+                <p>Você está acompanhando: <strong>Rebeca Silva</strong> (2º ano do ensino médio)</p>
+            </div>
+
+            <div class="dashboard">
+                <!-- Card de presença do aluno -->
+                <div class="card">
+                    <h3><i class="fas fa-calendar-alt"></i> Presença do Aluno</h3>
+                    <p>Presença semanal da Rebeca:</p>
+                    
+                    <div class="attendance-chart">
+                        <div class="attendance-day">
+                            <p>Seg</p>
+                            <div class="attendance-bar present"></div>
+                            <span>Presente</span>
+                        </div>
+                        <div class="attendance-day">
+                            <p>Ter</p>
+                            <div class="attendance-bar present"></div>
+                            <span>Presente</span>
+                        </div>
+                        <div class="attendance-day">
+                            <p>Qua</p>
+                            <div class="attendance-bar present"></div>
+                            <span>Presente</span>
+                        </div>
+                        <div class="attendance-day">
+                            <p>Qui</p>
+                            <div class="attendance-bar absent"></div>
+                            <span>Falta</span>
+                        </div>
+                        <div class="attendance-day">
+                            <p>Sex</p>
+                            <div class="attendance-bar present"></div>
+                            <span>Presente</span>
+                        </div>
+                    </div>
+                    
+                    <div class="attendance-summary">
+                        <p><strong>Resumo da semana:</strong> 4 presenças e 1 falta</p>
+                        <p><strong>Total do mês:</strong> 15 presenças e 2 faltas</p>
+                    </div>
+                </div>
+
+                <!-- Card de humor do aluno -->
+                <div class="card">
+                    <h3><i class="fas fa-smile"></i> Humor do Aluno</h3>
+                    <p>Humor registrado por Rebeca nesta semana:</p>
+                    
+                    <div class="mood-display">
+                        <div id="studentMoodIcon" class="mood-icon-large">
+                            <i class="fas fa-meh"></i>
+                        </div>
+                        <div class="mood-info">
+                            <h4 id="studentMoodText">Neutro</h4>
+                            <p id="studentMoodDate">Registrado em: 25/10/2025</p>
+                            <p id="studentMoodMessage">"Estou me sentindo normal esta semana."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mood-history">
+                        <h4>Histórico recente:</h4>
+                        <div class="history-item">
+                            <span class="history-date">18/10/2025</span>
+                            <span class="history-mood happy">Feliz</span>
+                        </div>
+                        <div class="history-item">
+                            <span class="history-date">11/10/2025</span>
+                            <span class="history-mood sad">Triste</span>
+                        </div>
+                        <div class="history-item">
+                            <span class="history-date">04/10/2025</span>
+                            <span class="history-mood neutral">Neutro</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card de comunicados -->
+                <div class="card">
+                    <h3><i class="fas fa-bullhorn"></i> Comunicados da Instituição</h3>
+                    <p>Mensagens enviadas pela escola:</p>
+                    
+                    <div class="announcements-list">
+                        <div class="announcement">
+                            <div class="announcement-header">
+                                <h4>Reunião de pais e mestres</h4>
+                                <span class="announcement-date">24/10/2025</span>
+                            </div>
+                            <p>Convite para reunião mensal de pais e mestres que ocorrerá no dia 30/10 às 19h no auditório da escola.</p>
+                        </div>
+                        
+                        <div class="announcement">
+                            <div class="announcement-header">
+                                <h4>Feriado escolar</h4>
+                                <span class="announcement-date">20/10/2025</span>
+                            </div>
+                            <p>Informamos que não haverá aula no dia 15/11 devido ao feriado nacional. As aulas serão retomadas normalmente no dia 16/11.</p>
+                        </div>
+                        
+                        <div class="announcement">
+                            <div class="announcement-header">
+                                <h4>Campanha do agasalho</h4>
+                                <span class="announcement-date">15/10/2025</span>
+                            </div>
+                            <p>Estamos arrecadando agasalhos para doação. As doações podem ser entregues na secretaria da escola até o dia 30/10.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="communication-channel">
+                        <h4>Canal de comunicação direta:</h4>
+                        <p>Precisa falar com a instituição? Use o canal seguro disponível na área do aluno.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Acompanhamento contínuo e preventivo para o bem-estar do seu aluno.</p>
+            <p class="footer-team">Área do Responsável - Escola de Bolso</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
