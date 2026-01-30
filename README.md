@@ -56,16 +56,6 @@ Os conteúdos apresentados no sistema são baseados **exclusivamente nos PDFs do
 
 ---
 
-## 🌱 Possíveis evoluções futuras
-
-* Integração com backend (API)
-* Persistência de dados em banco
-* Sistema de autenticação
-* Dashboards educacionais
-* Versão mobile-first / PWA
-
----
-
 ## ✍️ Autores
 
 **Arthur Emmanuel**
