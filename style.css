@@ -242,13 +242,19 @@ body {
 
 /* ============================================
    ESTILOS PARA PÁGINA DO ALUNO (aluno.html)
+   MOOD – carrossel centralizado
    ============================================ */
 .mood-options-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 10px;
+    display: flex;
+    gap: 16px;
     margin: 20px 0;
     width: 100%;
+    overflow-x: auto;
+    padding: 10px 4px 16px;
+    scroll-snap-type: x proximity;
+    scroll-padding-left: 4px;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
 }
 
 .mood-option {
@@ -258,6 +264,8 @@ body {
     padding: 10px;
     border-radius: 10px;
     width: 100%;
+    flex: 0 0 120px;
+    scroll-snap-align: start;
 }
 
 .mood-option:hover {
@@ -273,14 +281,16 @@ body {
 }
 
 .mood-image-container {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 8px;
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 6px;
     border-radius: 50%;
     overflow: hidden;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     background-color: #f0f0f0;
     border: 2px solid transparent;
     transition: border-color 0.3s ease;
@@ -304,24 +314,9 @@ body {
 .mood-label {
     font-weight: 600;
     color: #3D405B;
-    margin-top: 5px;
+    margin-top: 4px;
     font-size: 0.85rem;
     line-height: 1.2;
-}
-
-.mood-result {
-    text-align: center;
-    margin-top: 20px;
-    padding-top: 15px;
-    border-top: 1px solid #F2CC8F;
-    width: 100%;
-}
-
-#currentMood {
-    color: #E07A5F;
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    display: block;
 }
 
 /* ============================================
@@ -628,17 +623,9 @@ body {
     margin: 0 auto 20px;
 }
 
-.mood-icon-large.happy {
-    background-color: #81B29A;
-}
-
-.mood-icon-large.neutral {
-    background-color: #F2CC8F;
-}
-
-.mood-icon-large.sad {
-    background-color: #E07A5F;
-}
+.mood-icon-large.happy { background-color: #81B29A; }
+.mood-icon-large.neutral { background-color: #F2CC8F; }
+.mood-icon-large.sad { background-color: #E07A5F; }
 
 .mood-info {
     flex: 1;
@@ -688,20 +675,9 @@ body {
     white-space: nowrap;
 }
 
-.history-mood.happy {
-    background-color: #81B29A;
-    color: white;
-}
-
-.history-mood.neutral {
-    background-color: #F2CC8F;
-    color: #3D405B;
-}
-
-.history-mood.sad {
-    background-color: #E07A5F;
-    color: white;
-}
+.history-mood.happy { background-color: #81B29A; color: white; }
+.history-mood.neutral { background-color: #F2CC8F; color: #3D405B; }
+.history-mood.sad { background-color: #E07A5F; color: white; }
 
 /* Sistema de comunicados do responsável */
 .announcements-list {
@@ -1029,6 +1005,7 @@ input:focus {
 
 /* ============================================
    RESPONSIVIDADE - UNIFICADO
+   (corrigido: mood não usa grid)
    ============================================ */
 
 /* Para telas grandes (acima de 1200px) */
@@ -1038,29 +1015,17 @@ input:focus {
     }
 }
 
-/* Para telas médias/grandes (até 1200px) */
-@media (max-width: 1200px) {
-    .mood-options-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
-    }
-}
-
 /* Para tablets (até 992px) */
 @media (max-width: 992px) {
     .dashboard {
         grid-template-columns: 1fr;
     }
-    
-    .mood-options-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
+
     .mood-display {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .mood-info {
         text-align: center;
     }
@@ -1073,63 +1038,63 @@ input:focus {
         gap: 15px;
         text-align: center;
     }
-    
+
     .header-actions {
         flex-direction: column;
         gap: 10px;
         align-items: center;
     }
-    
+
     .header-info {
         text-align: center;
     }
-    
+
     .profile-cards,
     .dashboard {
         grid-template-columns: 1fr;
     }
-    
+
     .features {
         grid-template-columns: 1fr;
     }
-    
+
     .logo {
         justify-content: center;
         text-align: center;
     }
-    
+
     .attendance-chart {
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     .attendance-day {
         min-width: 60px;
         margin-bottom: 15px;
     }
-    
+
     .student-item {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .student-info {
         width: 100%;
     }
-    
+
     .student-status {
         justify-content: center;
     }
-    
+
     .message-filter {
         justify-content: center;
     }
-    
+
     .announcement-header {
         flex-direction: column;
         gap: 5px;
     }
-    
+
     .history-item {
         flex-direction: column;
         gap: 5px;
@@ -1142,42 +1107,54 @@ input:focus {
     .container {
         padding: 15px;
     }
-    
+
     .logo h1 {
         font-size: 1.6rem;
     }
-    
+
     .tagline {
         font-size: 1rem;
     }
-    
-    .mood-options-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .mood-image-container {
-        width: 70px;
-        height: 70px;
-    }
-    
+
     .card,
     .profile-card {
         padding: 20px 15px;
     }
-    
+
     .page-title h2 {
         font-size: 1.5rem;
     }
-    
+
     .btn-primary {
         padding: 10px 20px;
         min-width: 100px;
     }
-    
+
     .mood-icon-large {
         width: 80px;
         height: 80px;
         font-size: 2.5rem;
+    }
+
+    /* mood ajuste mobile */
+    .mood-option {
+        flex: 0 0 104px;
+    }
+
+    .mood-options-grid {
+        padding-left: calc(50% - 52px);
+        padding-right: calc(50% - 52px);
+        scroll-padding-left: calc(50% - 52px);
+        scroll-padding-right: calc(50% - 52px);
+    }
+
+    .mood-image-container {
+        width: 52px;
+        height: 52px;
+    }
+
+    .mood-label {
+        font-size: 0.8rem;
     }
 }
 
@@ -1186,40 +1163,52 @@ input:focus {
     .logo i {
         font-size: 2rem;
     }
-    
+
     .logo h1 {
         font-size: 1.4rem;
     }
-    
+
     .profile-icon {
         width: 60px;
         height: 60px;
     }
-    
+
     .profile-icon i {
         font-size: 1.5rem;
     }
-    
+
     .btn-primary, .btn-secondary, .btn-filter {
         font-size: 0.85rem;
         padding: 8px 16px;
     }
-    
+
     .card h3 {
         font-size: 1.2rem;
     }
-    
-    .mood-image-container {
-        width: 60px;
-        height: 60px;
-    }
-    
-    .mood-label {
-        font-size: 0.75rem;
-    }
-    
+
     .status-mood, .status-attendance {
         font-size: 0.75rem;
         padding: 3px 8px;
+    }
+
+    /* mood ajuste extra */
+    .mood-option {
+        flex: 0 0 96px;
+    }
+
+    .mood-options-grid {
+        padding-left: calc(50% - 48px);
+        padding-right: calc(50% - 48px);
+        scroll-padding-left: calc(50% - 48px);
+        scroll-padding-right: calc(50% - 48px);
+    }
+
+    .mood-image-container {
+        width: 48px;
+        height: 48px;
+    }
+
+    .mood-label {
+        font-size: 0.75rem;
     }
 }

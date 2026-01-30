@@ -65,7 +65,6 @@ const EscolaDeBolso = {
         }
     },
     
-    // Página do aluno
     inicializarPaginaAluno: function() {
         // Configurar opções de humor
         const opcoesHumor = document.querySelectorAll('.mood-option');
@@ -75,7 +74,8 @@ const EscolaDeBolso = {
                 this.definirHumorAluno(humor);
             });
         });
-        
+
+        this.habilitarScrollHumor();
         // Configurar botão de salvar humor
         const btnSalvarHumor = document.getElementById('saveMoodBtn');
         if (btnSalvarHumor) {
